@@ -7,9 +7,9 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, p, div, img, a {
+h1, h2, h3, h4, div, img, a {
   opacity: 0;
-  transform: scale(0.7);
+  transform: scale(0.8);
   transition: all 0.6s ease;
 }
 
@@ -22,22 +22,14 @@ h1, h2, h3, h4, p, div, img, a {
   padding: 40px 20px;
 }
 
-.tech-stack img {
+.tech-stack img, .contact img, .graphs img {
   margin: 10px;
   transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
-.tech-stack img:hover {
+.tech-stack img:hover, .contact img:hover, .graphs img:hover {
   transform: scale(1.2) rotate(5deg);
-}
-
-.contact a img {
-  margin: 10px;
-  transition: transform 0.3s ease;
-}
-
-.contact a img:hover {
-  transform: scale(1.1);
 }
 
 footer {
