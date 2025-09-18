@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const animatedElements = document.querySelectorAll(".animate, .animated-section");
+  const animatedElements = document.querySelectorAll(".animate");
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
