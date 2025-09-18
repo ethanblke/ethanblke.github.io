@@ -1,10 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About Me/title>
+  <meta charset="UTF-8">
+  <title>Ethan Blake</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #2d2d2d);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, p, div, img, a {
+      animation: zoomIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    h1 { animation-delay: 0.2s; }
+    h2 { animation-delay: 0.4s; }
+    h4 { animation-delay: 0.6s; }
+    p, div, img, a { animation-delay: 0.8s; }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.7);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    .tech-stack img {
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .tech-stack img:hover {
+      transform: scale(1.2) rotate(5deg);
+    }
+
+    .contact a img {
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .contact a img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #111;
+      border-top: 1px solid #333;
+    }
+
+    .animated-section {
+      margin: 50px 0;
+      animation: fadeUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, I am Ethan Blake!</h1>
+
+  <div class="container">
+    <h1>Hello, I'm Ethan!</h1>
+    <h2>I specialize in building user-friendly applications.</h2>
+
+    <div class="animated-section">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ethanblke/ethanblke/output/pacman-contribution-graph-dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ethanblke/ethanblke/output/pacman-contribution-graph.svg">
+        <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/ethanblke/ethanblke/output/pacman-contribution-graph.svg">
+      </picture>
+    </div>
+
+    <div>
+      <img src="https://visitor-badge.laobi.icu/badge?page_id=ethanblke.ethanblke&right_color=violet" />
+    </div>
+
+    <h4 class="animated-section">My Tech Stack:</h4>
+    <div class="tech-stack animated-section">
+      <img src="https://skillicons.dev/icons?i=rust" height="60" alt="rust logo" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" height="60" alt="kotlin logo" />
+      <img src="https://skillicons.dev/icons?i=c" height="60" alt="c logo" />
+      <img src="https://skillicons.dev/icons?i=ts" height="60" alt="typescript logo" />
+      <img src="https://skillicons.dev/icons?i=py" height="60" alt="python logo" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="60" alt="cplusplus logo" />
+      <img src="https://cdn.simpleicons.org/android/3DDC84" height="60" alt="android logo" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="60" alt="react logo" />
+      <img src="https://skillicons.dev/icons?i=tailwind" height="60" alt="tailwindcss logo" />
+    </div>
+
+    <h4 class="animated-section">Contact Me:</h4>
+    <div class="contact animated-section">
+      <a href="https://discordapp.com/users/1358900221937188915" target="_blank">
+        <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="discord logo" />
+      </a>
+    </div>
+
+    <div class="animated-section">
+      <img src="https://streak-stats.demolab.com?user=ethanblke&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph" />
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=ethanblke&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph" />
+    </div>
+
+    <h3 class="animated-section">Show some ❤️ by starring some of the repositories!</h3>
+  </div>
+
+  <footer>
+    <p>© 2025 Ethan Blake | Built with ❤️ and creativity</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll("h1, h2, h3, h4, p, div, img, a");
+      elements.forEach((el, index) => {
+        el.style.animationDelay = `${0.2 * index}s`;
+      });
+    });
+  </script>
+
 </body>
 </html>
