@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #2d2d2d);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, p, div, img, a {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: all 0.6s ease;
+}
+
+.animate-in {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.container {
+  padding: 40px 20px;
+}
+
+.tech-stack img {
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tech-stack img:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.contact a img {
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact a img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #111;
+  border-top: 1px solid #333;
+}
